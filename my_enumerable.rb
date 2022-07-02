@@ -5,7 +5,7 @@ module MyEnumerable
     result
   end
 
-  def any?($block)
+  def any?(&block)
     result = false
     each { |element| result = true if block.call(element) }
     result
